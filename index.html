@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hauswirtschaftsanwendung</title>
+    <!-- Hier können Sie Links zu Ihren CSS-Dateien einfügen -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Hauswirtschaftsanwendung</h1>
+        <!-- Hier können Sie das Menü Ihrer Anwendung einfügen -->
+        <nav>
+            <ul>
+                <li><a href="#mengenumrechner">Mengenumrechner</a></li>
+                <!-- Weitere Menüpunkte hier -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hier werden die Hauptinhalte Ihrer Anwendung eingefügt -->
+        <section id="mengenumrechner">
+            <h2>Mengenumrechner</h2>
+            <!-- Hier können Sie die Eingabefelder und Ergebnisse des Mengenumrechners einfügen -->
+            <form id="umrechner-form">
+                <label for="personenImRezept">Anzahl der Personen im Rezept:</label>
+                <input type="number" id="personenImRezept" name="personenImRezept" min="1" required>
+            
+                <label for="vorhandeneMenge">Vorhandene Menge:</label>
+                <input type="number" id="vorhandeneMenge" name="vorhandeneMenge" min="1" required>
+            
+                <label for="gewuenschtePersonen">Gewünschte Anzahl von Personen:</label>
+                <input type="number" id="gewuenschtePersonen" name="gewuenschtePersonen" min="1" required>
+            
+                <button type="submit">Umrechnen</button>
+            </form>
+            
+            <div id="ergebnis"></div>
+        </section>
+        <!-- Weitere Abschnitte hier -->
+    </main>
+
+    <!-- Hier können Sie Links zu Ihren JavaScript-Dateien einfügen -->
+    <script src="script.js"></script>
+</body>
+</html>
